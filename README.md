@@ -1,42 +1,63 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Company Chatbot
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+An AI-powered chatbot that answers questions about your company using OpenAI's GPT-4 and company-specific data.
+
+## Features
+
+- 🤖 AI-powered responses using GPT-4
+- 💬 Real-time chat interface
+- 🎨 Clean UI with Tailwind CSS
+- 📊 Company data integration
+- ⚡ Built with Nuxt 3
+
+## Prerequisites
+
+- Node.js 16.x or later
+- OpenAI API key
 
 ## Setup
 
-Make sure to install the dependencies:
-
+1. Clone the repository
+2. Install dependencies:
 ```bash
-# yarn
-yarn install
-
-# npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
-## Development Server
+3. Create a `.env` file in the root directory with your OpenAI API key:
+```bash
+NUXT_OPENAI_API_KEY=your_api_key_here
+```
 
-Start the development server on http://localhost:3000
+> ⚠️ **Important**: Never commit your `.env` file or expose your API key publicly!
 
+## Development
+
+Start the development server:
 ```bash
 npm run dev
 ```
 
 ## Production
 
-Build the application for production:
-
+Build the application:
 ```bash
 npm run build
 ```
 
-Locally preview production build:
-
+Preview the production build:
 ```bash
 npm run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Configuration
+
+### Company Data
+Update the company information in `data/companyData.json` to customize the chatbot's knowledge base.
+
+### Environment Variables
+Required environment variables:
+- `NUXT_OPENAI_API_KEY`: Your OpenAI API key
+
+## License
+
+MIT License
