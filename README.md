@@ -28,8 +28,6 @@ npm install
 NUXT_OPENAI_API_KEY=your_api_key_here
 ```
 
-> ⚠️ **Important**: Never commit your `.env` file or expose your API key publicly!
-
 ## Development
 
 Start the development server:
